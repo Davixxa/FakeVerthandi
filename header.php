@@ -13,10 +13,10 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/">Hjem<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.php">Hjem<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/svømning.php">Sv&oslash;mning</a>
+            <a class="nav-link" href="svømning.php">Sv&oslash;mning</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#">L&oslash;b</a>
