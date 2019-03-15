@@ -1,0 +1,14 @@
+    /* Make the image fully responsive */
+.carousel-inner img {
+        height: 15%;
+        max-height:450px;
+        width: 100%
+}
+
+#demo {
+      height: 15%;
+      max-height: 450px;
+      width: 100%;
+      border: 1px solide #000000;
+      background: #dd6666;
+}
