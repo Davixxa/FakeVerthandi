@@ -1,4 +1,7 @@
-<?php require('header.php'); ?>
+<?php 
+$pagetitle="Min Idrætsforening | Hjem";
+require('header.php');
+ ?>
 
 <div id="demo" class="carousel slide" data-ride="carousel">
  
