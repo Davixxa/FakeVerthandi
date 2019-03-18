@@ -9,12 +9,13 @@
   </div>
   <div class="list-group">
     <button type="button" class="list-group-item list-group-item-action active">
-      Cras justo odio
+      Hold
     </button>
-    <button type="button" class="list-group-item list-group-item-action">Dapibus ac facilisis in</button>
-    <button type="button" class="list-group-item list-group-item-action">Morbi leo risus</button>
-    <button type="button" class="list-group-item list-group-item-action">Porta ac consectetur ac</button>
-    <button type="button" class="list-group-item list-group-item-action">Vestibulum at eros</button>
+    <button type="button" class="list-group-item list-group-item-action">Nybegyndere</button>
+    <button type="button" class="list-group-item list-group-item-action">Lidt øvet</button>
+    <button type="button" class="list-group-item list-group-item-action">Øvet</button>
+    <button type="button" class="list-group-item list-group-item-action">Mini talent</button>
+    <button type="button" class="list-group-item list-group-item-action">Talent</button>
   </div>
 
   <?php require("footer.php") ?>
