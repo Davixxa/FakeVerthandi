@@ -31,11 +31,22 @@
               <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Kontakt Os</a>
           </li>
       </ul>
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Log Ind</a>
-            </li>
-      </ul>
+      <?php if($loggedin == true) {
+
+      echo '<ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Velkommen Bruger</a>
+              </li>
+            </ul>';
+
+      }else {
+        echo '      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Log Ind</a>
+          </li>
+    </ul>';
+      } ?>
+
     </div>
   </nav>
 
