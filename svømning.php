@@ -13,14 +13,16 @@
       <button type="button" class="list-group-item list-group-item-action active">
         Hold
       </button>
-      <button type="button" class="list-group-item list-group-item-action">Nybegyndere</button>
+      <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#nybegynderCollapse" aria-expanded="false" aria-controls="nybegynderCollapse">Nybegyndere</button>
+      <div id="nybegynderCollapse" class="collapse">
+			<div class="list-group-item list-group-item-action">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat voluptatem veniam, suscipit rem inventore officiis repellendus. Repellendus deserunt officiis itaque at soluta, dolores, excepturi, voluptatem harum tempore dolorem in!</div>
+		</div>
       <button type="button" class="list-group-item list-group-item-action">Lidt øvet</button>
       <button type="button" class="list-group-item list-group-item-action">Øvet</button>
       <button type="button" class="list-group-item list-group-item-action">Mini talent</button>
       <button type="button" class="list-group-item list-group-item-action">Talent</button>
     </div>
 
-    
 
 </div>
 
