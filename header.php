@@ -52,7 +52,7 @@
             <p>Du kan kontakte os på <a href="#">+45 12 34 56 78</a> eller pr. email <a href="mailto:namesubjecttochangeif@davixxa.net">namesubjecttochangeif@davixxa.net</a></p>
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Luk</button>
         </div>
     </div>
 </div>
@@ -69,10 +69,21 @@
         <button type="button" class="close" data-dismiss="modal"> &times;</button>
         </div>
         <div class="modal-body">
-            <p>Du kan kontakte os på <a href="#">+45 12 34 56 78</a> eller pr. email <a href="mailto:namesubjecttochangeif@davixxa.net">namesubjecttochangeif@davixxa.net</a></p>
+            <form>
+              <div class="form-group">
+                <label for="inputEmail">E-Mail</label>
+                <input type="email" id="inputEmail" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="inputPassword">Adgangskode</label>
+                <input type="password" id="inputPassword" class="form-control">
+              </div>
+              </form>
+              <p>Har du ikke en bruger? Så <a href="register.php">Registrer dig her</a>.
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Log ind som Administrator</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Log Ind</button>
         </div>
     </div>
 </div>
