@@ -26,8 +26,14 @@
       <div id="OevetCollapse" class="collapse">
 			<div class="list-group-item list-group-item-action">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat voluptatem veniam, suscipit rem inventore officiis repellendus. Repellendus deserunt officiis itaque at soluta, dolores, excepturi, voluptatem harum tempore dolorem in!</div>
 		</div>
-      <button type="button" class="list-group-item list-group-item-action">Mini talent</button>
-      <button type="button" class="list-group-item list-group-item-action">Talent</button>
+    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#minitalentCollapse" aria-expanded="false" aria-controls="minitalentCollapse">Mini talent</button>
+      <div id="minitalentCollapse" class="collapse">
+			<div class="list-group-item list-group-item-action">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat voluptatem veniam, suscipit rem inventore officiis repellendus. Repellendus deserunt officiis itaque at soluta, dolores, excepturi, voluptatem harum tempore dolorem in!</div>
+		</div>
+    <button type="button" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#talentCollapse" aria-expanded="false" aria-controls="talentCollapse">Talent</button>
+      <div id="talentCollapse" class="collapse">
+			<div class="list-group-item list-group-item-action">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt placeat voluptatem veniam, suscipit rem inventore officiis repellendus. Repellendus deserunt officiis itaque at soluta, dolores, excepturi, voluptatem harum tempore dolorem in!</div>
+		</div>
     </div>
 
 
