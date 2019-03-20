@@ -3,8 +3,8 @@
   <br>
 
   <div class="jumbotron">
-      <h1 class="display-4">Svømning</h1>
-      <p class="lead">Vi har forskellige niveauer indenfor svømning</p>
+      <h1 class="display-4">Løb</h1>
+      <p class="lead">Vi har forskellige niveauer indenfor løb</p>
       <hr class="my-4">
       <p>Vi har alt fra nybegyndere, lidt øvet, øvet, mini talent og talent.</p>
       <a class="btn btn-primary btn-lg" href="#" role="button">Læs mere</a>
