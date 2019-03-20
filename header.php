@@ -19,13 +19,13 @@
             <a class="nav-link" href="svømning.php">Sv&oslash;mning</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">L&oslash;b</a>
+              <a class="nav-link" href="løb.php">L&oslash;b</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Gymnastik</a>
+              <a class="nav-link" href="gymnastik.php">Gymnastik</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Fitness</a>
+              <a class="nav-link" href="fitness.php">Fitness</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Kontakt Os</a>
