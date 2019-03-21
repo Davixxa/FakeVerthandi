@@ -31,21 +31,26 @@
               <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Kontakt Os</a>
           </li>
       </ul>
-      <?php if($loggedin == true) {
+      <?php if($loggedin == true) { ?>
 
-      echo '<ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Velkommen Bruger</a>
-              </li>
-            </ul>';
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loggedInDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Velkommen Bruger</a>
+              <div class="dropdown-menu">
+                <a href="userCP.php" class="dropdown-item">Kontrolpanel</a>
+                <div class="dropdown-divider"></div>
+                <a href="index.php" class="dropdown-item">Log ud</a>
+              </div>
+          </li>
+        </ul>
 
-      }else {
-        echo '      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+      <?php }else { ?>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
             <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Log Ind</a>
           </li>
-    </ul>';
-      } ?>
+        </ul>
+      <?php } ?>
 
     </div>
   </nav>
@@ -93,8 +98,8 @@
               <p>Har du ikke en bruger? Så <a href="register.php">Registrer dig her</a>.
         </div>
         <div class="modal-footer">
-            <button type="button" class="btn btn-warning" data-dismiss="modal">Log ind som Administrator</button>
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Log Ind</button>
+            <button type="button" class="btn btn-warning" onclick="document.location = 'userCP.php';">Log ind som Administrator</button>
+            <button type="button" class="btn btn-primary" onclick="alert('Log ind som administrator istedet. Dette har alle funktionerne');">Log Ind</button>
         </div>
     </div>
 </div>

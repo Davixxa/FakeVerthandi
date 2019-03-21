@@ -2,7 +2,6 @@
 <html lang="da">
 <head>
     
-    <meta charset="utf-8">
     <!--- Import af Bootstrap 4.0. Bootstrap er et CSS og JavaScript-framework. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     
