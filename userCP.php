@@ -59,7 +59,63 @@ require("header.php");
             </div>
           </div>
       </div>
-      <div class="tab-pane fade" id="v-pills-my-teams" role="tabpanel" aria-labelledby="v-pills-my-teams-tab">TBI: Lav simpel holdoversigt</div>
+      <div class="tab-pane fade" id="v-pills-my-teams" role="tabpanel" aria-labelledby="v-pills-my-teams-tab">
+      <div class="jumbotron">
+      TBI: Lav knapper
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th>Sport</th>
+              <th>Niveau</th>
+              <th>Tid</th>
+              <th>Ugedag</th>
+              <th>Startdato</th>
+              <th>Slutdato</th>
+              <th>Status</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td>Svømning</td>
+                <td>Øvet</td>
+                <td>16:30-20:00</td>
+                <td>Torsdag</td>
+                <td>10/01-2019</td>
+                <td>14/03-2019</td>
+                <td>Afsluttet</td>
+              </tr>
+              <tr>
+                <td>Svømning</td>
+                <td>Talent</td>
+                <td>16:30-20:00</td>
+                <td>Mandag</td>
+                <td>01/04-2019</td>
+                <td>01/06-2019</td>
+                <td>(Anullerknap)</td>
+              </tr>
+              <tr>
+                <td>Fitness</td>
+                <td>Begynder</td>
+                <td>14:00-15:00</td>
+                <td>Onsdag</td>
+                <td>27/03-2019</td>
+                <td>31/07-2019</td>
+                <td>(Betalingsknap)</td>
+              </tr>
+              <tr>
+                <td>Gymnastik</td>
+                <td>Lidt øvet</td>
+                <td>15:00-17:00</td>
+                <td>L&oslash;rdag</td>
+                <td>13/04-2019</td>
+                <td>25/05-2019</td>
+                <td>(Betalingsknap)</td>
+              </tr>
+            </tbody>
+          </thead>
+        </table>
+      </div>
+      
+      </div>
       <div class="tab-pane fade" id="v-pills-manage-teams" role="tabpanel" aria-labelledby="v-pills-manage-teams-tab">TBI: Lav forme for "Nyt hold", "Slet Hold", "Nyt medlem", "Fjern medlem"</div>
       <div class="tab-pane fade" id="v-pills-manage-users" role="tabpanel" aria-labelledby="v-pills-manage-users-tab">TBI: Lav forme for ban bruger, ny sport, fjern sport</div>
     </div>
