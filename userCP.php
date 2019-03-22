@@ -237,8 +237,44 @@ require("header.php");
           </div>
           
       </div>
-      <div class="tab-pane fade" id="v-pills-manage-users" role="tabpanel" aria-labelledby="v-pills-manage-users-tab">TBI: Lav forme for ban bruger, ny sport, fjern sport</div>
-      
+      <div class="tab-pane fade" id="v-pills-manage-users" role="tabpanel" aria-labelledby="v-pills-manage-users-tab">TBI: Lav forme for ban bruger, ny sport, fjern sport
+
+      <div class="jumbotron">
+              <div class="container container-fluid">
+                  <form action="" class="form-signin">
+                      <h2 class="form-signin-heading">Ban bruger</h2>
+                      <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label for="Hold"></label>
+                            <select name="Køn" id="sport" class="form-control">
+                            <option value="fitness">JensHansen1234</option>
+                            <option value="swimming">IldBi3810</option>
+                            <option value="running">SomeEnglishAnon</option>
+                            <option value="gymnastics">LonJensen</option>
+                          </select>
+                          </div>
+                      </div>
+                      <button class="btn btn-danger btn-large btn-block">Slet hold</button>
+                  </form>
+              </div>
+          </div>
+
+          <div class="jumbotron">
+            <div class="container container-fluid">
+              <form action="" class="form-signin">
+                <h2 class="form-signin-heading"></h2>
+                <div class="form-row">
+                  <div class="form-group col-md-12"><label for=""></label><input type="text" class="form-control"></div>
+                </div>
+                <button class="btn btn-primary btn-large btn-block"></button>
+              </form>
+            </div>
+          </div>
+
+
+
+      </div>
+
     </div>
 </div>
 

@@ -31,7 +31,7 @@
               <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Kontakt Os</a>
           </li>
       </ul>
-      <?php if($loggedin == true) { ?>
+      <?php if(isset($loggedin) && $loggedin == true) { ?>
 
         <ul class="navbar-nav ml-auto">
           <li class="nav-item dropdown">
