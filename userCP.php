@@ -18,7 +18,7 @@ require("header.php");
       <a class="nav-link" id="v-pills-my-teams-tab" data-toggle="pill" href="#v-pills-my-teams" role="tab" aria-controls="v-pills-my-teams" aria-selected="false">Mine hold</a>
       <a class="nav-link" id="v-pills-manage-view-tab" data-toggle="pill" href="#v-pills-view-users" role="tab" aria-controls="v-pills-view-users" aria-selected="false">Træner: Vis medlemmer</a>
       <a class="nav-link" id="v-pills-manage-teams-tab" data-toggle="pill" href="#v-pills-manage-teams" role="tab" aria-controls="v-pills-manage-teams" aria-selected="false">Træner: Administrer Hold</a>
-      <a class="nav-link" id="v-pills-manage-users-tab" data-toggle="pill" href="#v-pills-manage-users" role="tab" aria-controls="v-pills-manage-users" aria-selected="false">Admin: Administrer brugere</a>
+      <a class="nav-link" id="v-pills-manage-users-tab" data-toggle="pill" href="#v-pills-manage-users" role="tab" aria-controls="v-pills-manage-users" aria-selected="false">Admin: Adminkontrolpanel</a>
     </div>
   </div>
   <div class="col-9 centerfix">
@@ -75,6 +75,7 @@ require("header.php");
               <th>Slutdato</th>
               <th>Status</th>
             </tr>
+            </thead>
             <tbody>
             <tr>
                 <td>Sv&oslash;mning</td>
@@ -113,7 +114,6 @@ require("header.php");
                 <td>(Betalingsknap)</td>
               </tr>
             </tbody>
-          </thead>
         </table>
       </div>
       
@@ -133,6 +133,7 @@ require("header.php");
               <th>Slutdato</th>
               <th>Status</th>
             </tr>
+            </thead>
             <tbody>
             <tr>
                 <td>Sv&oslash;mning - &Oslash;vet</td>
@@ -171,12 +172,11 @@ require("header.php");
                 <td>Ikke betalt</td>
               </tr>
             </tbody>
-          </thead>
         </table>
       </div>
     </div>
       <div class="tab-pane fade" id="v-pills-manage-teams" role="tabpanel" aria-labelledby="v-pills-manage-teams-tab">
-          TBI: Lav forme for "Nyt hold", "Slet Hold", "Nyt medlem", "Fjern medlem"
+  
           <div class="jumbotron">
               <div class="container container-fluid">
                   <form class="form-signin">
@@ -218,12 +218,12 @@ require("header.php");
           </div>
           <div class="jumbotron">
               <div class="container container-fluid">
-                  <form action="" class="form-signin">
+                  <form class="form-signin">
                       <h2 class="form-signin-heading">Slet hold</h2>
                       <div class="form-row">
                           <div class="form-group col-md-12">
-                            <label for="Hold"></label>
-                            <select name="Køn" id="sport" class="form-control">
+                            <label for="sletHold"></label>
+                            <select name="Køn" id="sletHold" class="form-control">
                             <option value="swimming">Sv&oslash;mning - Tordsag</option>
                             <option value="running">L&oslash;b - Mandag</option>
                             <option value="gymnastics">Gymnastik - Fredag</option>
@@ -237,16 +237,16 @@ require("header.php");
           </div>
           
       </div>
-      <div class="tab-pane fade" id="v-pills-manage-users" role="tabpanel" aria-labelledby="v-pills-manage-users-tab">TBI: Lav forme for ban bruger, ny sport, fjern sport
+      <div class="tab-pane fade" id="v-pills-manage-users" role="tabpanel" aria-labelledby="v-pills-manage-users-tab">
 
       <div class="jumbotron">
               <div class="container container-fluid">
-                  <form action="" class="form-signin">
+                  <form class="form-signin">
                       <h2 class="form-signin-heading">Ban bruger</h2>
                       <div class="form-row">
                           <div class="form-group col-md-12">
-                            <label for="Hold"></label>
-                            <select name="Køn" id="sport" class="form-control">
+                            <label for="banBruger"></label>
+                            <select name="Køn" id="banBruger" class="form-control">
                             <option value="fitness">JensHansen1234</option>
                             <option value="swimming">IldBi3810</option>
                             <option value="running">SomeEnglishAnon</option>
@@ -254,30 +254,49 @@ require("header.php");
                           </select>
                           </div>
                       </div>
-                      <button class="btn btn-danger btn-large btn-block">Slet hold</button>
+                      <button class="btn btn-danger btn-large btn-block">Ban bruger</button>
                   </form>
               </div>
           </div>
 
           <div class="jumbotron">
             <div class="container container-fluid">
-              <form action="" class="form-signin">
-                <h2 class="form-signin-heading"></h2>
+              <form class="form-signin">
+                <h2 class="form-signin-heading">Opret Sport</h2>
                 <div class="form-row">
-                  <div class="form-group col-md-12"><label for=""></label><input type="text" class="form-control"></div>
+                  <div class="form-group col-md-12"><label for="sportName"></label><input id="sportName" type="text" class="form-control" placeholder="Sportsnavn"></div>
                 </div>
-                <button class="btn btn-primary btn-large btn-block"></button>
+                <button class="btn btn-primary btn-large btn-block">Opret Sport</button>
               </form>
             </div>
           </div>
 
-
+          <div class="jumbotron">
+              <div class="container container-fluid">
+                  <form class="form-signin">
+                      <h2 class="form-signin-heading">Slet sport</h2>
+                      <div class="form-row">
+                          <div class="form-group col-md-12">
+                            <label for="delSport"></label>
+                            <select name="Køn" id="delSport" class="form-control">
+                            <option value="fitness">Fitness</option>
+                            <option value="swimming">Sv&oslash;mning</option>
+                            <option value="running">L&oslash;b</option>
+                            <option value="gymnastics">Gymnastik</option>
+                          </select>
+                          </div>
+                      </div>
+                      <button class="btn btn-danger btn-large btn-block">Slet Sport</button>
+                  </form>
+              </div>
+          </div>
 
       </div>
 
     </div>
 </div>
 
+</div>
 </div>
 
 

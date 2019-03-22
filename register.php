@@ -26,7 +26,7 @@
             
                 <div class="form-group col-md-6">
                     <label for="inputLastName">Efternavn</label>
-                    <input type="text" id="inputUsername" name="lastName" class="form-control" placeholder="Efternavn" required>
+                    <input type="text" id="inputLastName" name="lastName" class="form-control" placeholder="Efternavn" required>
                 </div>
             </div>
             <div class="form-group">
@@ -34,12 +34,12 @@
                 <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Brugernavn" required>
             </div>
             <div class="form-group">
-                <label for="inputEmail">E-mail Addresse</label>
-                <input type="email" id="inputEmail" class="form-control" name="email" placeholder="E-mail Addresse" required >
+                <label for="inputSignUpEmail">E-mail Addresse</label>
+                <input type="email" id="inputSignUpEmail" class="form-control" name="email" placeholder="E-mail Addresse" required >
             </div>
             <div class="form-group">
-                <label for="inputPassword">Password</label>
-                <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+                <label for="inputSignUpPassword">Password</label>
+                <input type="password" id="inputSignUpPassword" class="form-control" name="password" placeholder="Password" required>
             </div>
             <div class="form-group">
                 <label for="inputPasswordConfirm">Gentag Password</label><span id="trumpWrong" style="color: red;"></span>
@@ -48,12 +48,12 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="birthdate">Fødselsdato</label>
-                    <input type="date" id="birthdate" class="form-control" name="birthDate" placeholder="Fødselsdato" required>
+                    <input type="date" id="birthdate" class="form-control" name="birthDate" required>
                 </div>
                 
                 <div class="form-group col-md-6">
                     <label for="gender">Køn</label>
-                    <select id="gender" class="form-control" name="gender" placeholder="Køn" required>
+                    <select id="gender" class="form-control" name="gender" size=2 required>
                         <option value="female">Kvinde</option>
                         <option value="male">Mand</option>
                     </select>
@@ -74,7 +74,7 @@
 
         <!-- Divider, samt tilbage til start og login-side knap -->
         <hr class="featurette-divider" /> 
-        <a href="index.php"> <-Tilbage til start</a>
+        <a href="index.php"> &lt;-Tilbage til start</a>
         <a href="#" data-toggle="modal" data-target ="#loginModal" class="float-right">Har du allerede en bruger? Log ind!</a>
 
         </div>
