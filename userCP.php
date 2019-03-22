@@ -61,8 +61,9 @@ require("header.php");
       </div>
       <div class="tab-pane fade" id="v-pills-my-teams" role="tabpanel" aria-labelledby="v-pills-my-teams-tab">
       <div class="jumbotron">
-      TBI: Lav knapper
-        <table class="table table-striped">
+      <h2 class="form-signin-heading">Mine hold</h2>
+      <p>Tabellen har en horisontal scrollbar p&aring; mobile enheder</p>
+        <table class="table table-striped table-responsive">
           <thead class="thead-dark">
             <tr>
               <th>Sport</th>
@@ -116,7 +117,61 @@ require("header.php");
       </div>
       
       </div>
-      <div class="tab-pane fade" id="v-pills-manage-teams" role="tabpanel" aria-labelledby="v-pills-manage-teams-tab">TBI: Lav forme for "Nyt hold", "Slet Hold", "Nyt medlem", "Fjern medlem"</div>
+      <div class="tab-pane fade" id="v-pills-manage-teams" role="tabpanel" aria-labelledby="v-pills-manage-teams-tab">
+          TBI: Lav forme for "Nyt hold", "Slet Hold", "Nyt medlem", "Fjern medlem"
+          <div class="jumbotron">
+              <div class="container container-fluid">
+                  <form class="form-signin">
+                      <h2 class="form-signin-heading">Nyt hold</h2>
+                      <div class="form-row">
+                          <div class="form-group col-md-2"><label for="sport">Aktivitet</label>
+                          <select name="Køn" id="sport" class="form-control">
+                            <option value="swimming">Sv&oslash;mning</option>
+                            <option value="running">L&oslash;b</option>
+                            <option value="gymnastics">Gymnastik</option>
+                            <option value="fitness">Fitness</option>
+                          </select>
+                        </div>
+                          <div class="form-group col-md-2"><label for="ugedag">Ugedag</label>
+                          <select name="ugedag" id="ugedag" class="form-control">
+                            <option value="monday">Mandag</option>
+                            <option value="tuesday">Tirsdag</option>
+                            <option value="wednesday">Onsdag</option>
+                            <option value="thursday">Torsdag</option>
+                            <option value="friday">Fredag</option>
+                            <option value="saturday">L&oslash;rdag</option>
+                            <option value="sunday">S&oslash;ndag</option>
+                          </select>
+                        </div>
+                          <div class="form-group col-md-2">
+                          <label for="startTime">Startstidspunkt</label>
+                          <input type="time" name="startTime" class="form-control" id="startTime">
+                        </div>
+                        <div class="form-group col-md-2">
+                          <label for="endTime">Sluttidspunkt</label>
+                          <input type="time" name="endTime" class="form-control" id="endTime">
+                        </div>
+                      </div>
+                      <button class="btn btn-primary btn-large btn-block"></button>
+                  </form>
+              </div>
+          </div>
+          <div class="jumbotron">
+              <div class="container container-fluid">
+                  <form action="" class="form-signin">
+                      <h2 class="form-signin-heading"></h2>
+                      <div class="form-row">
+                          <div class="form-group"><label for=""></label><input type="text"></div>
+                      </div>
+                      <div class="form-row">
+                          <div class="form-group"><label for=""></label><input type="text"></div>
+                      </div>
+                      <button class="btn btn-primary btn-large btn-block"></button>
+                  </form>
+              </div>
+          </div>
+          
+      </div>
       <div class="tab-pane fade" id="v-pills-manage-users" role="tabpanel" aria-labelledby="v-pills-manage-users-tab">TBI: Lav forme for ban bruger, ny sport, fjern sport</div>
     </div>
   </div>
